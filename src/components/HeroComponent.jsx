@@ -1,5 +1,12 @@
 import React from "react";
-import { Box, Button, Typography, useMediaQuery, useTheme, IconButton } from "@mui/material";
+import {
+  Box,
+  Button,
+  Typography,
+  useMediaQuery,
+  useTheme,
+  IconButton,
+} from "@mui/material";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -49,9 +56,10 @@ const HeroComponent = () => {
         color: "black",
         boxSizing: "border-box",
         position: "relative",
-        height: "100vh",
+        height: "120vh",
         overflow: "hidden",
         fontFamily: "'Open Sans', sans-serif",
+        paddingBottom: "5rem"
       }}
     >
       <Box
@@ -65,7 +73,7 @@ const HeroComponent = () => {
           maxWidth: isMobile ? "90%" : "33%",
           left: isMobile ? "5%" : "12%",
           transform: "translateY(-50%)",
-          top: "50%",
+          top: "40%",
           padding: "2rem",
         }}
       >
@@ -73,7 +81,9 @@ const HeroComponent = () => {
           Lorem ipsum dolor sit <span>amet</span>
         </Typography>
         <Typography variant="body1" sx={bodyTextStyles}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sollicitudin sit amet dolor ac lobortis. Phasellus lobortis vitae elit non dictum. Vestibulum feugiat ex vitae pulvinar ornare.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+          sollicitudin sit amet dolor ac lobortis. Phasellus lobortis vitae elit
+          non dictum. Vestibulum feugiat ex vitae pulvinar ornare.
         </Typography>
         <Box
           sx={{
@@ -180,14 +190,13 @@ const HeroComponent = () => {
       <Box
         sx={{
           position: "absolute",
-          bottom: "10%",
           right: isMobile ? "10%" : "16%",
           width: isMobile ? "300px" : "450px",
           zIndex: 2,
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          top: "16.5rem",
+          top: "10%",
         }}
       >
         <img
